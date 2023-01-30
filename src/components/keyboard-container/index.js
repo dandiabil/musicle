@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
+import { Backspace, Enter } from '../../../public/icons';
 import { useGetLetters } from '../../lib/get-letters';
-import { ReactComponent as Backspace } from '../../icons/backspace-icon.svg';
-import { ReactComponent as Enter } from '../../icons/enter-icon.svg';
 
 const KeyboardContainer = ({ onClick, backspaceHandle, enterHandle }) => {
   const { firstRow, secondRow, thirdRow } = useGetLetters();

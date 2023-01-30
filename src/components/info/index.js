@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactComponent as Info } from '../../icons/info-icon.svg';
+import { Info } from '../../../public/icons';
 import ClickOutside from '../click-outside';
 
 const Information = () => {

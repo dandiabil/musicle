@@ -1,14 +1,14 @@
+import { useRouter } from 'next/router';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { ReactComponent as Backspace } from '../../icons/backspace-icon.svg';
+import { Backspace } from '../../../public/icons';
 
 const BackButton = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div
       className="back-button absolute top-5 left-4 z-20 text-white flex items-center pr-4 py-3 cursor-pointer"
-      onClick={() => navigate(-1)}
+      onClick={() => router.back()}
     >
       <Backspace fill="#FFF" className="w-12 h-6" />
       <h3 className="uppercase font-bold">Back</h3>
