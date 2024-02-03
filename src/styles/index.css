@@ -11,46 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.home-page {
-  background-image: url('/images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-attachment: scroll;
-}
-
-.home-page::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.line-separator {
-  width: 40%;
-  display: block;
-  height: 4px;
-  background-color: #ececec;
-  position: relative;
-  z-index: 10;
-  box-shadow: 12px 16px 4px rgba(12, 12, 12, 0.5);
-}
-
-.circle-separator {
-  width: 70px;
-  height: 70px;
-  border: 2px solid #ececec;
-  position: relative;
-  border-radius: 999px;
-  z-index: 10;
-  box-shadow: 12px 16px 10px rgba(12, 12, 12, 1);
-}
-
 .neon-sign {
   animation: NeonAnimation 4s;
   animation-timing-function: linear;
@@ -160,15 +120,6 @@ body {
   border: 3px solid #ececec;
   border-radius: 67px;
   padding: 6px;
-}
-
-.guess-container {
-  box-shadow: inset -1px -1px 6px -1px #000000, inset 0px 2px 8px rgba(0, 0, 0, 0.75);
-}
-
-.keyboard-container {
-  box-shadow: inset -1px -1px 6px -1px #d6d6d6, inset 0px 2px 8px rgba(240, 240, 240, 0.75);
-  transition: 200ms all;
 }
 
 .keyboard-container:hover {
